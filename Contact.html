@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page settings and shared stylesheet -->
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Page heading and navigation -->
+    <header>
+        <div class="navigation">
+            <a href="About_Me_Page.html">About Me</a>
+            <a href="Intrest.html">Interests</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <h1>Contact Me</h1>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- My contact information -->
+        <section>
+            <h2>My Information</h2>
+            <p>Name: Aydin Ali</p>
+            <p>Email: aydinaman2010@gmail.com</p>
+        </section>
+
+        <!-- Contact form for visitors -->
+        <section>
+            <h2>Send a Message</h2>
+            <p>This is a practice form. It does not send messages.</p>
+
+            <form>
+                <!-- Visitor's name -->
+                <p>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <!-- Larger box for the visitor's message -->
+                <p>
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </p>
+
+                <!-- Matching names let visitors choose only one answer -->
+                <p>Do you enjoy robotics?</p>
+
+                <input type="radio" id="yes" name="robotics" value="yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="robotics" value="no">
+                <label for="no">No</label>
+
+                <!-- Dropdown with several choices -->
+                <p>
+                    <label for="subject">Favorite school subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="math">Math</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                        <option value="history">History</option>
+                    </select>
+                </p>
+
+                <!-- Submits the form, but no message service is connected -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Information at the bottom of the page -->
+    <footer>
+        <p>Made by Aydin Ali</p>
+    </footer>
+</body>
+</html>
