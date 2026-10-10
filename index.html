@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- These page settings basically make the text work and make the website fit on phones -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>About Me</title>
+    <!-- This connects the CSS file so the website can have colors and other styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
+  
 <body>
-    <!-- Links to my website pages -->
-<div class="navigation">
-    <a href="index.html">About Me</a>
-    <a href="Intrest.html">Interests</a>
-    <a href="Contact.html">Contact</a>
-</div>
+    <!-- Header is used for the navigation and the introduction at the top of the page -->
     <header>
+        <!-- Nav allows the user to basically move to the other HTML files and navigate the website -->
+        <nav class="navigation">
+            <a href="index.html">About Me</a>
+            <a href="Intrest.html">Interests</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
         <h1>Hello! I'm Aydin</h1>
-        <p>Welcome to my page!</p>
+        <p>Welcome to my personal website!</p>
     </header>
 
+    <!-- Main is used to hold the important information about me and my music -->
     <main>
-        <section class="about-me">
+        <section>
             <h2>About Me</h2>
-            <img src="Natural car portrait with glasses.png"
-                 alt="A portrait of me wearing glasses, with buzz cut making kissy face"
+            <!-- Img displays my picture and alt describes the picture if it cannot be seen -->
+            <img src="IMG_2821.jpeg"
+                 alt="Aydin wearing glasses and ciematic city backround"
                  width="300">
-
             <p>
                 My name is Aydin, and I'm a student at The Village School.
                 I enjoy robotics, gaming, listening to music, and spending
@@ -33,32 +37,32 @@
             </p>
         </section>
 
-        <section class="music">
+        <!-- Section is used to keep all of the music information together and organized -->
+        <section>
             <h2>Music</h2>
-            <img src="Screenshot 2026-10-02 101836.png"
-                 alt="My music playlist"
+            <img src="6341b40178c01d891d30e6bbce3b010d.jpg"
+                 alt="A playlist cover showing five friends relaxing together"
                  width="300">
+            <p>My playlist consists mostly of pop, R&B, and alternative music.</p>
 
-            <p>My playlist consists mostly of pop, R&B, and alternative/indie music.</p>
-
-            <h2>My Favorite Song</h2>
-            <h3>End of Beginning — Djo</h3>
-
+            <h3>My Favorite Song</h3>
+            <p>My favorite song is “End of Beginning” by Djo.</p>
+            <!-- Iframe basically makes a frame that puts the YouTube video inside the page -->
             <iframe
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/B3Z4XGAxJB0"
-                title="End of Beginning by Djo"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+                allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+            >
 
-            <p>
-                My favorite song is “End of Beginning” by Djo.
-                The song reflects on memories of Chicago and the feeling
-                of reconnecting with a past version of yourself.
-            </p>
+            </iframe>
         </section>
     </main>
+
+    <!-- Footer is used to show my name at the bottom of the page -->
+    <footer>
+        <p>Made by Aydin Ali</p>
+    </footer>
 </body>
 </html>

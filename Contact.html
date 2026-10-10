@@ -1,78 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Page settings and shared stylesheet -->
+    <!-- These settings make the text work right and help the page fit on phones -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <!-- This connects the CSS file so the page can use the colors and styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Page heading and navigation -->
+    <!-- The header holds the nav and the introduction at the top -->
     <header>
-        <div class="navigation">
+        <!-- Nav allows the user to move to the other HTML files and navigate the website -->
+        <nav class="navigation">
             <a href="index.html">About Me</a>
             <a href="Intrest.html">Interests</a>
             <a href="Contact.html">Contact</a>
-        </div>
-
+        </nav>
         <h1>Contact Me</h1>
+        <p>Fill out the practice form below.</p>
     </header>
 
-    <!-- Main page content -->
+    <!-- Main holds my contact information and the form -->
     <main>
-        <!-- My contact information -->
         <section>
             <h2>My Information</h2>
             <p>Name: Aydin Ali</p>
             <p>Email: aydinaman2010@gmail.com</p>
         </section>
 
-        <!-- Contact form for visitors -->
         <section>
             <h2>Send a Message</h2>
-            <p>This is a practice form. It does not send messages.</p>
+            <p>This is a practice form, so it does not send messages yet.</p>
 
-            <form>
-                <!-- Visitor's name -->
-                <p>
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" name="name">
-                </p>
+            <!-- Form keeps all the questions together and collects the visitors answers -->
+            <form action="#">
+                <!-- Label tells the user what the box is for and input lets them type their name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <!-- Larger box for the visitor's message -->
-                <p>
-                    <label for="message">Your message:</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </p>
+                <!-- Textarea gives the user a bigger box because the message needs more room if needed -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                <!-- Matching names let visitors choose only one answer -->
+                <!-- The matching name makes the radio buttons only allow one answer -->
                 <p>Do you enjoy robotics?</p>
-
                 <input type="radio" id="yes" name="robotics" value="yes">
-                <label for="yes">Yes</label>
-
+                <label class="choice" for="yes">Yes</label>
                 <input type="radio" id="no" name="robotics" value="no">
-                <label for="no">No</label>
+                <label class="choice" for="no">No</label>
 
-                <!-- Dropdown with several choices -->
-                <p>
-                    <label for="subject">Favorite school subject:</label>
-                    <select id="subject" name="subject">
-                        <option value="math">Math</option>
-                        <option value="science">Science</option>
-                        <option value="english">English</option>
-                        <option value="history">History</option>
-                    </select>
-                </p>
+                <!-- Select makes the dropdown and each option gives the user a subject to choose -->
+                <label for="subject">Favorite school subject:</label>
+                <select id="subject" name="subject">
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                    <option value="history">History</option>
+                </select>
 
-                <!-- Submits the form, but no message service is connected -->
+                <!-- The button basically submits the form after the user fills it out -->
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
-    <!-- Information at the bottom of the page -->
+    <!-- Footer shows who made the website at the bottom -->
     <footer>
         <p>Made by Aydin Ali</p>
     </footer>
